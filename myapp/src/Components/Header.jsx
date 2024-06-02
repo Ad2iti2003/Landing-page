@@ -45,36 +45,44 @@ const Header = () => {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }} component={'nav'} position={'sticky'} zIndex={'10'} top={'0'} >
-      <AppBar position="sticky" >
-        <Toolbar className='bg-black text-white'>
-          
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img src={logo} className='w-20 lg:w-40' />
+      
+   <Box sx={{
+   flexGrow: 1,
+   position: 'sticky',
+   zIndex: 10,
+   top: 0,
+      
+      
+      
+  }} component={'nav'}>
+     <AppBar position="sticky">
+     <Toolbar className=' text-white bg-black'>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+           <img src={logo} className='w-20 lg:w-40' />
           </Typography>
-          <Box sx={{display:{xs:'none',sm:'block'}}} className='lg:my-5'>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl' to='/'>Home</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>About us</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Services</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Solution</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Careers</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Insights</Link></Button>
-          <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Contact us</Link></Button>
+         <Box sx={{display:{xs:'none',sm:'block'}}} className='lg:my-5'>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl' to='/'>Home</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>About us</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Services</Link></Button>
+        <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Solution</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Careers</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Insights</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Contact us</Link></Button>
 
-          </Box>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
+        </Box>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+           sx={{ mr: 2 }}
           >
-            <MenuIcon sx={{display:{xs:'block',sm:'none'}}} onClick={toggleDrawer(true)} />
-            <Drawer open={open} onClose={toggleDrawer(false)}>
-            {DrawerList}
-            </Drawer>
-          </IconButton>
-        </Toolbar>
+          <MenuIcon sx={{display:{xs:'block',sm:'none'}}} onClick={toggleDrawer(true)} />
+           <Drawer open={open} onClose={toggleDrawer(false)}>
+           {DrawerList}
+           </Drawer>
+         </IconButton>
+       </Toolbar>
       </AppBar>
     </Box>
   )
