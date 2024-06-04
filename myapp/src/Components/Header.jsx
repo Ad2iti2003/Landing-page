@@ -61,13 +61,13 @@ const Header = () => {
            <img src={logo} className='w-20 lg:w-40' />
           </Typography>
          <Box sx={{display:{xs:'none',sm:'block'}}} className='lg:my-5'>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl' to='/'>Home</Link></Button>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>About us</Link></Button>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Services</Link></Button>
-        <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Solution</Link></Button>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Careers</Link></Button>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Insights</Link></Button>
-         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-green-700 hover:decoration-2 lg:text-xl'>Contact us</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl' to='/'>Home</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>About us</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>Services</Link></Button>
+        <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>Solution</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>Careers</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>Insights</Link></Button>
+         <Button color="inherit"><Link className='hover:underline hover:underline-offset-8 hover:decoration-red-500 hover:decoration-2 lg:text-xl'>Contact us</Link></Button>
 
         </Box>
         <IconButton
