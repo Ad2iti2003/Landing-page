@@ -44,7 +44,7 @@ const Header = () => {
 
 
   return (
-      <Box className='flex h-16 bg-black text-white justify-between' sx={{
+      <Box className='flex h-16 bg-black shadow-md shadow-black text-white justify-between' sx={{
         flexGrow: 1,
         position: 'sticky',
         zIndex: 10,
