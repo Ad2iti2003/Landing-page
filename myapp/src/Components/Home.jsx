@@ -10,10 +10,10 @@ import img1 from '../images/pexel4.jpeg'
 
 const Home = () => {
   return (
-    <div className=' -mt-16 bg-inherit'>
+    <div className=' bg-inherit'>
     <Carousel  showThumbs={false} showIndicators={false}>
         <div className=' pb-16'>
-          <div className='bg-slate-800'>
+          <div className='bg-black'>
             <img src={img1} className='max-h-screen opacity-40 ' />
             </div>
             <Box component={'figcaption'} className='sm:-translate-y-56 -translate-y-40 lg:-translate-y-96 bg-slate-700 m-auto bg-opacity-10' sx={{width:{sx:'full',sm:'770px'}}}>
