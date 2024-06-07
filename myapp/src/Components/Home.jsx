@@ -36,7 +36,7 @@ Transforming Concepts Into Reality</p>
 
 <h1 className='text-center text-3xl font-bold'>Our Services</h1>
 <div className='flex flex-wrap justify-center p-4 gap-2 lg:gap-x-12'>
-  <div className='bg-sky-500 my-2 p-4 text-center rounded-lg w-80 shadow-lg shadow-slate-600'>
+  <div className='bg-blue-400 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-purple-200 hover:to-sky-300 my-2 p-4 text-center rounded-lg w-80 shadow-lg shadow-slate-600'>
     <h1 className='font-bold text-2xl mb-2'>Embedded Engineering</h1>
   <p className='text-lg '>Our Comprehensive Hardware 
 Development Services Span Both 
@@ -47,7 +47,7 @@ Innovative Solutions For Enterprise
 Needs, Our Expert Engineers Are 
 Ready To Tackle The Challenge</p>
   </div>
-  <div className='bg-sky-500 my-2 p-4 w-80 text-center rounded-lg shadow-lg shadow-slate-600'>
+  <div className=' bg-blue-400 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-purple-200 hover:to-sky-300 my-2 p-4 w-80 text-center rounded-lg shadow-lg shadow-slate-600'>
     <h1 className='font-bold text-2xl mb-2'>Automotive & EVs</h1>
     <p className='text-lg '>Our Embedded Automotive 
 Development Services Encompass 
@@ -59,7 +59,7 @@ Crafting Next-Gen Automotive
 Solutions, Our Engineers Thrive On 
 The Challenge</p>
     </div>
-  <div className='bg-sky-500 my-2 p-4 w-80 text-center rounded-lg shadow-lg shadow-slate-600'>
+  <div className=' bg-blue-400 hover:-translate-y-2 hover:bg-gradient-to-r hover:from-purple-200 hover:to-sky-300 my-2 p-4 w-80 text-center rounded-lg shadow-lg shadow-slate-600'>
     <h1 className='font-bold text-2xl mb-2'>IoT & AI</h1>
     <p className='text-lg'>Our AI And Machine Learning 
 Development Services Encompass 
