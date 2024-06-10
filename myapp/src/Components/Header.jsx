@@ -24,16 +24,14 @@ const Header = () => {
       <Box sx={{ width: 350 }} role="presentation" onClick={toggleDrawer(false)}>
         
           
-            <Box className='flex mt-6 text-white' flexDirection={'column'}>
+            <Box className='flex mt-10 text-white' flexDirection={'column'}>
 
                 <img src={logo2} className='w-20 m-auto pb-3'/>
-                <Button className='block'><Link className='text-black ' to='/'>Home</Link></Button>
-                <Button className='block'><Link className='text-black '>About us</Link></Button>
-                <Button className='block'><Link className='text-black '>Services</Link></Button>
-                <Button className='block'><Link className='text-black '>Solutions</Link></Button>
-                <Button className='block'><Link className='text-black '>Careers</Link></Button>
-                <Button className='block'><Link className='text-black '>Insights</Link></Button>
-                <Button className='block'><Link className='text-black '>Contact us</Link></Button>
+                <Button className='block'><Link className='text-cyan-950 ' to='/'>Automotive</Link></Button>
+                <Button className='block'><Link className='text-cyan-950 '>IoT</Link></Button>
+                <Button className='block'><Link className='text-cyan-950 '>Services</Link></Button>
+                <Button className='block'><Link className='text-cyan-950 '>About us</Link></Button>
+                <Button className='block'><Link className='text-cyan-950 '>Contact us</Link></Button>
 
             </Box>
           
@@ -44,43 +42,44 @@ const Header = () => {
 
 
   return (
-      <Box className='flex h-16 bg-black shadow-md shadow-black text-white justify-between' sx={{
+      <Box className='bg-cyan-950 justify-between flex shadow-sm shadow-cyan-950 text-white' sx={{
         flexGrow: 1,
         position: 'sticky',
         zIndex: 10,
         top: 0,
+        
       
            
            
            
        }} component={'nav'}>
-        <Box className='flex'>
-          <img src={logo2} className='w-12 h-12 mt-2 ml-3'/>
-          <p className='p-4'>GreySpire Innoivation </p>
+        <Box className='flex lg:ml-10 ml-5'>
+          <img src={logo2} className='lg:w-24 lg:h-24 w-16 h-16 mt-2 mb-1'/>
+          <p className=' ml-3 mt-6 lg:mt-10 text-xl'>GreySpire Innoivation</p>
         </Box>
-        <Box className='flex pl-4 pb-4 pt-4 float-end' sx={{display:{xs:'none',sm:'block'}}}>
-          <Button color='inherit'>
-            <Link className='text-white'>Automotive</Link>
+        <Box className='flex mt-6 lg:mt-10 lg:ml-28' sx={{display:{xs:'none',sm:'block'}}}>
+          
+            <Button><Link className='text-white  lg:text-base text-sm px-0 lg:px-1 '>Automotive</Link></Button>
 
-          </Button>
-          <Button color='inherit'>
-            <Link className='text-white'>IoT</Link>
+         
+          
+            <Button><Link className='text-white  lg:text-base text-sm px-0 lg:px-1 '>IoT</Link></Button>
 
-          </Button>
-          <Button color='inherit'>
-            <Link className='text-white'>Services</Link>
+          
+          
+            <Button><Link className='text-white lg:text-base text-sm px-0 lg:px-2'>Services</Link></Button>
 
-          </Button>
-          <Button color='inherit'>
-            <Link className='text-white'>About us</Link>
+         
+          
+            <Button><Link className='text-white lg:text-base text-sm px-0 lg:px-2'>About us</Link></Button>
 
-          </Button>
-          <Button color='inherit'>
-            <Link className='text-white'>
-            Contact Us
-            </Link>
+          
+          
+  <Button> <Link className='text-white lg:text-base text-sm px-0 lg:px-2'>
+            Contact us
+            </Link></Button>
 
-          </Button>
+          
           
         </Box>
         <IconButton
@@ -89,9 +88,10 @@ const Header = () => {
           color="inherit"
           aria-label="menu"
            sx={{ mr: 2 }}
+           
           >
           <MenuIcon sx={{display:{xs:'block',sm:'none'}}} onClick={toggleDrawer(true)} />
-           <Drawer open={open} onClose={toggleDrawer(false)} className='twxt-white'>
+           <Drawer open={open} onClose={toggleDrawer(false)} className='text-white'>
            {DrawerList}
            </Drawer>
          </IconButton>
